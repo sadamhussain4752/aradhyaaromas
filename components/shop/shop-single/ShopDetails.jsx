@@ -16,6 +16,7 @@ import { useDispatch } from "react-redux";
 import { addCart, addQty } from "@/features/shop/shopSlice";
 import ShopHeader from "@/components/header/ShopHeader";
 import Image from "next/image";
+import jobCatContent from "@/data/job-catergories";
 
 const ShopSingleDyanmic = ({ id }) => {
   const [product, setProducts] = useState({});
@@ -23,12 +24,29 @@ const ShopSingleDyanmic = ({ id }) => {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (!id) <h1>Loading...</h1>;
-    else setProducts(shopItems.find((item) => item.id == id) || shopItems[0]);
+// Function to find a product by SKU
+const findProductBySku = (sku) => {
+  // Flatten all products from all categories into a single array
+  const allProducts = jobCatContent.flatMap(category => category.products);
+  
+  // Find the product with the matching SKU
+  return allProducts.find(product => product.sku === sku);
+};
 
-    return () => {};
-  }, [id]);
+useEffect(() => {
+  if (!id) {
+    // setLoading(true);
+  } else {
+    const product = findProductBySku(id);
+    if (product) {
+      setProducts(product);
+    } else {
+      // Fallback to the first product if no matching SKU is found
+      setProducts(shopItems[0]);
+    }
+    // setLoading(false);
+  }
+}, [id]);
 
   // add to cart
   const addToCart = () => {
@@ -55,7 +73,7 @@ const ShopSingleDyanmic = ({ id }) => {
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Shop Single" meta={product?.title} />
+      <Breadcrumb title="Shop Single" meta={product?.name} />
       {/* <!--End Page Title--> */}
 
       {/* <!-- Start Shop Single --> */}
@@ -70,8 +88,8 @@ const ShopSingleDyanmic = ({ id }) => {
                   <Gallery>
                     <figure className="image">
                       <Item
-                        original={product?.img}
-                        thumbnail={product?.img}
+                        original={product?.logo}
+                        thumbnail={product?.logo}
                         width={410}
                         height={410}
                       >
@@ -84,7 +102,7 @@ const ShopSingleDyanmic = ({ id }) => {
                             <Image
                               width={410}
                               height={410}
-                              src={product?.img}
+                              src={product?.logo}
                               alt="shop single product for job board"
                             />
                             <span className="icon flaticon-magnifying-glass"></span>
@@ -99,7 +117,7 @@ const ShopSingleDyanmic = ({ id }) => {
                 <div className="info-column col-md-6 col-sm-12">
                   <div className="inner-column">
                     <h4 className="product-name">
-                      {product?.title} - KeySmart - Premium Key Holders
+                      {product?.name} 
                     </h4>
                     <div className="text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -107,8 +125,8 @@ const ShopSingleDyanmic = ({ id }) => {
                       Suspendisse pellentesque elementum proin diam.
                     </div>
                     <div className="item-price">
-                      ${product?.price}
-                      <del>${product?.oldPrice}</del>
+                      {product?.price}
+                      <del>{product?.price}</del>
                     </div>
 
                     <div className="other-options">

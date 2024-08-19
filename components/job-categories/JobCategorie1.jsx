@@ -7,27 +7,27 @@ import {LoginUserData,ProfileUserData,fetchBannerData} from "../../features/redu
 import { useEffect } from "react";
 
 const JobCategorie1 = () => {
-  const dispatch = useDispatch();
-  const { data, loading: bannerLoading, error: bannerError } = useSelector(
-    (state) => state.data
-  );
-  console.log(data,"afreen")
+  // const dispatch = useDispatch();
+  // const { data, loading: bannerLoading, error: bannerError } = useSelector(
+  //   (state) => state.data
+  // );
+  // console.log(data,"afreen")
 
-  useEffect(()=>{  
-    dispatch(fetchBannerData());
+  // useEffect(()=>{  
+  //   dispatch(fetchBannerData());
   
-  },[])
+  // },[])
   return (
     <>
-          {data && data.Categorys && data.Categorys.map((item) => (
+  {jobCatContent.map((item) => (
     <div className="category-block col-lg-4 col-md-6 col-sm-12" key={item._id}>
       <div className="inner-box">
         <div className="content">
-          <span className={`icon ${item.description}`}></span>
+          <span className={`icon ${item.icon}`}></span>
           <h4>
-            <Link href={`/shop/${item._id}`}>{item.name}</Link>
+            <Link href={`/shop/shop-list`}>{item.catTitle}</Link>
           </h4>
-          <p>({item.jobNumber} open positions)</p>
+          <p>({item.products.length} flavours)</p>
         </div>
       </div>
     </div>

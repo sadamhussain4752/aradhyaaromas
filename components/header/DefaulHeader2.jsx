@@ -36,7 +36,7 @@ const DefaulHeader = () => {
         navbar ? "fixed-header animated slideInDown" : ""
       }`}
     >
-    <EnterAddrsss visible={addressVisible} onClose={handleCloseAddressModal} />
+    {/* <EnterAddrsss visible={addressVisible} onClose={handleCloseAddressModal} /> */}
       {/* <!-- Main box --> */}
       <div className="main-box">
         {/* <!--Nav Outer --> */}
@@ -61,8 +61,7 @@ const DefaulHeader = () => {
         </div>
         {/* End .nav-outer */}
        
-        <div className="outer-box">
-          {/* <!-- Login/Register --> */}
+        {/* <div className="outer-box">
           <div className="pe-4" onClick={()=>{
             setAddressVisible(!addressVisible)
           }}>
@@ -83,14 +82,9 @@ const DefaulHeader = () => {
 
             <Sidebar />
 
-            {/* <Link
-              href="/employers-dashboard/post-jobs"
-              className="theme-btn btn-style-one"
-            >
-              Job Post
-            </Link> */}
+           
           </div>
-        </div>
+        </div> */}
       </div>
     </header>
   );

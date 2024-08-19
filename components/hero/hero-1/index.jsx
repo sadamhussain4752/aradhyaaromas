@@ -13,7 +13,7 @@ const index = () => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <div className="title-box">
+              {/* <div className="title-box">
                 <h3>
                   There Are <span className="colored">93,178</span> Postings
                   Here
@@ -22,24 +22,14 @@ const index = () => {
                 <div className="text">
                   Find Jobs, Employment & Career Opportunities
                 </div>
-              </div>
+              </div> */}
 
-              {/* <!-- Job Search Form --> */}
-              <div className="job-search-form">
-                <SearchForm />
-              </div>
-              {/* <!-- Job Search Form --> */}
-
-              {/* <!-- Popular Search --> */}
-              <PopularSearch />
-              {/* <!-- End Popular Search --> */}
+     
             </div>
           </div>
           {/* End .col */}
 
-          <div className="image-column col-lg-5 col-md-12">
-            <ImageBox />
-          </div>
+         
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ const RegBanner = () => {
   const regBannerContent = [
     {
       id: 1,
-      bgImage: `url("/images/index-13/banner/bg-1.png")`,
+      bgImage: `url("/images/index-13/banner/bg-image.jpeg")`,
       name: "Employers",
       text: ` Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt. Labore et dolore nostrud exercitation.`,

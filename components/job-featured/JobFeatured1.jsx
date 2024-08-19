@@ -1,6 +1,7 @@
 "use client";
 
 import jobFeatured from "../../data/job-featured";
+import jobCatContent from "../../data/job-catergories";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProductData } from "../../features/reducer/thunks";
@@ -8,21 +9,20 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 const JobFeatured1 = ({ categoryId }) => { // Receive categoryId as a prop
-  const dispatch = useDispatch();
-  const {
-    productlist,
-    loading: productListLoading,
-    error: productListError,
-  } = useSelector((state) => state.productlist);
+  // const dispatch = useDispatch();
+  // const {
+  //   productlist,
+  //   loading: productListLoading,
+  //   error: productListError,
+  // } = useSelector((state) => state.productlist);
 
-  useEffect(() => {
-    dispatch(fetchProductData(categoryId)); // Fetch product data based on categoryId
-  }, [dispatch, categoryId]);
+  // useEffect(() => {
+  //   dispatch(fetchProductData(categoryId)); // Fetch product data based on categoryId
+  // }, [dispatch, categoryId]);
 
   return (
     <>
-      {productlist?.jobPosts &&
-        productlist?.jobPosts?.slice(0, 6).map((item) => (
+      {jobCatContent[0].products?.slice(0, 6).map((item) => (
           <div
             className="job-block-two col-lg-12 col-md-12 col-sm-12"
             key={item.id}
@@ -38,26 +38,26 @@ const JobFeatured1 = ({ categoryId }) => { // Receive categoryId as a prop
                   />
                 </span>
                 <h4>
-                  <Link href={`/job-single-v1/${item._id}`}>{item.jobTitle}</Link>
+                  <Link href={`/shop/shop-single/${item.sku}`}>{item.name}</Link>
                 </h4>
 
                 <ul className="job-info">
-                  <li>
+                  {/* <li>
                     <span className="icon flaticon-briefcase"></span>
-                    {item.company}
-                  </li>
+                    {item.price}
+                  </li> */}
                   {/* company info */}
                   <li>
                     <span className="icon flaticon-map-locator"></span>
-                    {item.location}
+                    {item.rating}
                   </li>
                   {/* location info */}
                   <li>
-                    <span className="icon flaticon-clock-3"></span> {item.time}
+                    <span className="icon flaticon-clock-3"></span> {item.stock}
                   </li>
                   {/* time info */}
                   <li>
-                    <span className="icon flaticon-money"></span> {item.totalSalary}
+                    <span className="icon flaticon-money"></span> {item.price}
                   </li>
                   {/* salary info */}
                 </ul>
@@ -65,13 +65,13 @@ const JobFeatured1 = ({ categoryId }) => { // Receive categoryId as a prop
               </div>
               {/* End .content */}
 
-              <ul className="job-other-info">
+              {/* <ul className="job-other-info">
                 {item.jobType.map((val, i) => (
                   <li key={i} className={`required`}>
                     {val}
                   </li>
                 ))}
-              </ul>
+              </ul> */}
               {/* End .job-other-info */}
 
               <button className="bookmark-btn">

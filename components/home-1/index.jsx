@@ -32,8 +32,8 @@ const index = () => {
       <section className="job-categories ui-job-categories">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <h2>Popular Job Categories</h2>
-            <div className="text">2020 jobs live - 293 added today.</div>
+            <h2>Popular Categories</h2>
+            <div className="text">2024 live - 293 added today.</div>
           </div>
 
           <div
@@ -51,9 +51,9 @@ const index = () => {
       <section className="job-section">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <h2>Company Jobs</h2>
+            <h2>Flavours List</h2>
             <div className="text">
-              Know your worth and find the job that qualify your life
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry
             </div>
           </div>
 
@@ -63,7 +63,7 @@ const index = () => {
 
           <div className="btn-box">
             <Link
-              href="/job-single-v1/1"
+              href="shop/shop-list"
               className="theme-btn btn-style-one bg-blue"
             >
               <span className="btn-title">Load More Listing</span>
