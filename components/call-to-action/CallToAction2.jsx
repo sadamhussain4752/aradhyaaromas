@@ -8,7 +8,7 @@ const CallToAction2 = () => {
     >
       <div className="auto-container" data-aos="fade-up">
         <div className="sec-title light text-center">
-          <h2>Your Dream Jobs Are Waiting</h2>
+          <h2>About Aradhya Aromas</h2>
           <div className="text">
             Over 1 million interactions, 50,000 success stories Make yours now.
           </div>

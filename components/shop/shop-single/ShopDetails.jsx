@@ -120,9 +120,7 @@ useEffect(() => {
                       {product?.name} 
                     </h4>
                     <div className="text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Tempus nulla faucibus viverra nisl non senectus tortor.
-                      Suspendisse pellentesque elementum proin diam.
+                    {product?.description} 
                     </div>
                     <div className="item-price">
                       {product?.price}

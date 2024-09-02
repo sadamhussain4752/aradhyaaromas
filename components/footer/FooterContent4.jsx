@@ -3,29 +3,29 @@ import SearchForm from "./SearchForm";
 
 const FooterContent4 = () => {
   const footerContent = [
-    {
-      id: 1,
-      title: "For Candidates",
-      colClass: "col-lg-3",
-      menuList: [
-        { name: "Browse Jobs", route: "/" },
-        { name: "Browse Categories", route: "/" },
-        { name: "Candidate Dashboard", route: "/" },
-        { name: "Job Alerts", route: "/" },
-        { name: "My Bookmarks", route: "/" },
-      ],
-    },
-    {
-      id: 2,
-      title: "For Employers",
-      colClass: "col-lg-3",
-      menuList: [
-        { name: "Browse Candidates", route: "/" },
-        { name: "Employer Dashboard", route: "/" },
-        { name: "Add Job", route: "/" },
-        { name: "Job Packages", route: "/" },
-      ],
-    },
+    // {
+    //   id: 1,
+    //   title: "For Candidates",
+    //   colClass: "col-lg-3",
+    //   menuList: [
+    //     { name: "Browse Jobs", route: "/" },
+    //     { name: "Browse Categories", route: "/" },
+    //     { name: "Candidate Dashboard", route: "/" },
+    //     { name: "Job Alerts", route: "/" },
+    //     { name: "My Bookmarks", route: "/" },
+    //   ],
+    // },
+    // {
+    //   id: 2,
+    //   title: "For Employers",
+    //   colClass: "col-lg-3",
+    //   menuList: [
+    //     { name: "Browse Candidates", route: "/" },
+    //     { name: "Employer Dashboard", route: "/" },
+    //     { name: "Add Job", route: "/" },
+    //     { name: "Job Packages", route: "/" },
+    //   ],
+    // },
     {
       id: 3,
       title: "About Us",

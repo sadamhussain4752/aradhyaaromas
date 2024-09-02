@@ -12,17 +12,17 @@ const Funfact = () => {
     {
       id: 1,
       startCount: "0",
-      endCount: "4",
+      endCount: "2",
       endPointText: "M",
-      meta: "4 million daily active users",
+      meta: "2 million daily active users",
       animationDelay: "0",
     },
     {
       id: 2,
       startCount: "0",
-      endCount: "12",
+      endCount: "4",
       endPointText: "k",
-      meta: "Over 12k open job positions",
+      meta: "Over 4 million Month Sales Amazon Best Sellers",
       animationDelay: "100",
     },
     {

@@ -1,24 +1,27 @@
 const IntroDescriptions = () => {
   return (
     <div className="text-box">
-      <h4>About Superio</h4>
+      <h4>About Aradhya Aromas</h4>
       <p>
-        Far much that one rank beheld bluebird after outside ignobly allegedly
-        more when oh arrogantly vehement irresistibly fussy penguin insect
-        additionally wow absolutely crud meretriciously hastily dalmatian a
-        glowered inset one echidna cassowary some parrot and much as goodness
-        some froze the sullen much connected bat wonderfully on instantaneously
-        eel valiantly petted this along across highhandedly much.
+        
+ 	
+Aradhya Aromas, an Indian incense stick company, is dedicated to crafting premium organic incense sticks that elevate your sensory experience. Founded with a passion for purity and sustainability, Aradhya Aromas combines traditional methods with modern standards to produce incense sticks that are both eco-friendly and enchanting.
       </p>
       <p>
-        Repeatedly dreamed alas opossum but dramatically despite expeditiously
-        that jeepers loosely yikes that as or eel underneath kept and slept
-        compactly far purred sure abidingly up above fitting to strident wiped
-        set waywardly far the and pangolin horse approving paid chuckled
-        cassowary oh above a much opposite far much hypnotically more therefore
-        wasp less that hey apart well like while superbly orca and far hence
-        one.Far much that one rank beheld bluebird after outside ignobly
-        allegedly more when oh arrogantly vehement irresistibly fussy.
+      Each incense stick is meticulously made using 100% natural ingredients. The company sources high-quality herbs, resins, and essential oils, ensuring that their products are free from synthetic chemicals and additives. This commitment to organic materials not only supports a healthier environment but also provides a richer, more authentic fragrance experience.
+
+      </p>
+
+      <p>
+      Aradhya Aromas offers a diverse range of scents, from calming sandalwood and uplifting lavender to exotic jasmine and refreshing rose. Their incense sticks are designed to cater to various preferences, whether for meditation, relaxation, or simply enhancing the ambiance of your space.
+
+
+      </p>
+
+      <p>
+      The company’s dedication to quality and sustainability is evident in every aspect of their production process. By choosing Aradhya Aromas, you embrace a product that honors traditional craftsmanship while aligning with modern ecological values. Experience the tranquility and purity of Aradhya Aromas incense sticks and transform your environment with their natural, aromatic charm.
+
+
       </p>
     </div>
   );
