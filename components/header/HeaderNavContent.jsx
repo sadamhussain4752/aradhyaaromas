@@ -71,7 +71,7 @@ const HeaderNavContent = () => {
           >
             <span>Incense Sticks </span>
             <ul>
-              {jobCatContent.map((item) => (
+              {[...jobCatContent.slice(0,4)].map((item) => (
                 <li 
                 className="dropdown" key={item.id}>
                   <span
@@ -121,33 +121,17 @@ const HeaderNavContent = () => {
           >
             <span>Dhoop Sticks</span>
             <ul>
-              {jobCatContents.map((item) => (
-                <li 
-                className="dropdown" key={item.id}>
-                  <span
-                    className={`${
-                      isActiveParentChaild(jobCatContents[0].items, usePathname())
-                        ? "current "
-                        : ""
-                    }`}
-                  >
-                    {item.catTitle}
-                  </span>
-                  <ul>
-                    {item.products.map((menu, i) => (
-                      <li
-                        className={
-                          isActiveLink(menu.routePath, usePathname())
-                            ? "current"
-                            : ""
-                        }
-                        key={i}
-                      >
-                        <Link href={`/shop/shop-single/${menu.sku}`}>{menu.name}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
+              {jobCatContent && jobCatContent[4].products.map((menu,i) => (
+                <li
+                className={
+                  isActiveLink(menu.routePath, usePathname())
+                    ? "current"
+                    : ""
+                }
+                key={i}
+              >
+                <Link href={`/shop/shop-single/${menu.sku}`}>{menu.name}</Link>
+              </li>
               ))}
               {/* {pageItems.map((item, i) => (
                 <li

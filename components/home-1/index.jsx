@@ -29,7 +29,7 @@ const index = () => {
       <Hero1 />
       {/* End Hero Section */}
 
-      <section className="job-categories ui-job-categories mt-5">
+      <section className="job-categories ui-job-categories mt-80">
         <div className="auto-container">
           <div className="sec-title text-center">
             <h2>Popular Categories</h2>
@@ -124,7 +124,7 @@ const index = () => {
           <div className="sec-title text-center">
             <h2>Recent News Articles</h2>
             <div className="text">
-              Fresh job related news content posted each day.
+              Fresh Sell related news content posted each day.
             </div>
           </div>
           {/* End ."sec-title */}
@@ -135,14 +135,14 @@ const index = () => {
       </section>
       {/* <!-- End News Section --> */}
 
-      <section className="app-section">
+      {/* <section className="app-section">
         <div className="auto-container">
           <AppSection />
         </div>
-      </section>
+      </section> */}
       {/* <!-- End App Section --> */}
 
-      <CallToAction />
+      {/* <CallToAction /> */}
       {/* <!-- End Call To Action --> */}
 
       <FooterDefault />

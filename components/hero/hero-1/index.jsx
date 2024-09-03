@@ -13,16 +13,7 @@ const index = () => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              {/* <div className="title-box">
-                <h3>
-                  There Are <span className="colored">93,178</span> Postings
-                  Here
-                  <br /> For you!
-                </h3>
-                <div className="text">
-                  Find Jobs, Employment & Career Opportunities
-                </div>
-              </div> */}
+             
 
      
             </div>
