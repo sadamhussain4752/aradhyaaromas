@@ -17,6 +17,7 @@ import {
 } from "../../utils/linkActiveChecker";
 import { usePathname } from "next/navigation";
 import jobCatContent from "../../data/job-catergories";
+import jobCatContents from "../../data/Job_catergories"
 
 
 const HeaderNavContent = () => {
@@ -68,7 +69,7 @@ const HeaderNavContent = () => {
                 : ""
             } dropdown`}
           >
-            <span>Categories</span>
+            <span>Incense Sticks </span>
             <ul>
               {jobCatContent.map((item) => (
                 <li 
@@ -76,6 +77,56 @@ const HeaderNavContent = () => {
                   <span
                     className={`${
                       isActiveParentChaild(jobCatContent[0].items, usePathname())
+                        ? "current "
+                        : ""
+                    }`}
+                  >
+                    {item.catTitle}
+                  </span>
+                  <ul>
+                    {item.products.map((menu, i) => (
+                      <li
+                        className={
+                          isActiveLink(menu.routePath, usePathname())
+                            ? "current"
+                            : ""
+                        }
+                        key={i}
+                      >
+                        <Link href={`/shop/shop-single/${menu.sku}`}>{menu.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+              {/* {pageItems.map((item, i) => (
+                <li
+                  className={
+                    isActiveLink(item.routePath, usePathname()) ? "current" : ""
+                  }
+                  key={i}
+                >
+                  <Link href={item.routePath}>{item.name}</Link>
+                </li>
+              ))} */}
+            </ul>
+          </li>
+          <li
+            className={`${
+              isActiveParentChaild(pageItems, usePathname()) ||
+              isActiveParentChaild(shopItems[0].items, usePathname())
+                ? "current "
+                : ""
+            } dropdown`}
+          >
+            <span>Dhoop Sticks</span>
+            <ul>
+              {jobCatContents.map((item) => (
+                <li 
+                className="dropdown" key={item.id}>
+                  <span
+                    className={`${
+                      isActiveParentChaild(jobCatContents[0].items, usePathname())
                         ? "current "
                         : ""
                     }`}
@@ -136,6 +187,7 @@ const HeaderNavContent = () => {
             // } dropdown`}
           >
            <a href="/about"> <span>About</span></a>
+
             {/* <ul>
               {blogItems.map((item, i) => (
                 <li
@@ -148,6 +200,10 @@ const HeaderNavContent = () => {
                 </li>
               ))}
             </ul> */}
+          </li>
+          <li>
+          <a href="/contact"> <span>Contact</span></a>
+
           </li>
           {/* End Blog menu items */}
 

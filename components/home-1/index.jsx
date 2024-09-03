@@ -29,7 +29,7 @@ const index = () => {
       <Hero1 />
       {/* End Hero Section */}
 
-      <section className="job-categories ui-job-categories">
+      <section className="job-categories ui-job-categories mt-5">
         <div className="auto-container">
           <div className="sec-title text-center">
             <h2>Popular Categories</h2>
