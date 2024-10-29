@@ -151,7 +151,7 @@ const HeaderNavContent = () => {
             //   isActiveParentChaild(blogItems, usePathname()) ? "current" : ""
             // } dropdown`}
           >
-           <a href="blog-list-v1"> <span>Blog</span></a>
+           <a href="shop/shop-list"> <span>Shop</span></a>
             {/* <ul>
               {blogItems.map((item, i) => (
                 <li

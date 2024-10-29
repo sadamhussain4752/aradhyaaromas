@@ -37,15 +37,5 @@ module.exports = [
       { name: "Contact", route: "/contact" },
     ],
   },
-  {
-    id: 4,
-    title: "Helpful Resources",
-    menuList: [
-      { name: "Site Map", route: "/" },
-      { name: "Terms of Use", route: "/terms" },
-      { name: "Privacy Center", route: "/" },
-      { name: "Security Center", route: "/" },
-      { name: "Accessibility Center", route: "/" },
-    ],
-  },
+ 
 ];
