@@ -13,7 +13,7 @@ const CompanyInfo = () => {
         Founded in: <span>2011</span>
       </li>
       {/* <li>
-        Phone: <span>123 456 7890</span>
+        Phone: <span>+91 961 181 6233</span>
       </li> */}
       {/* <li>
         Email: <span>info@joio.com</span>

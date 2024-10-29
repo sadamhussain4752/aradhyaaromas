@@ -72,7 +72,7 @@ const ContactInfoBox = () => {
             name="address"
             value={contactInfo.address}
             onChange={handleInputChange}
-            placeholder="329 Queensberry Street, North Melbourne VIC 3051, Australia."
+            placeholder="Laggere, Bangalore - 560058"
             required
           />
         </div>
@@ -84,7 +84,7 @@ const ContactInfoBox = () => {
             name="mapLocation"
             value={contactInfo.mapLocation}
             onChange={handleInputChange}
-            placeholder="329 Queensberry Street, North Melbourne VIC 3051, Australia."
+            placeholder="Laggere, Bangalore - 560058"
             required
           />
         </div>

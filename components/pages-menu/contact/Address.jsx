@@ -8,8 +8,8 @@ const Address = () => {
       title: "Address",
       text: (
         <>
-          329 Queensberry Street, North
-          <br /> Melbourne VIC 3051, Australia.
+         Laggere, Bangalore - 560058
+         
         </>
       ),
     },
@@ -20,7 +20,7 @@ const Address = () => {
       text: (
         <>
           <a href="tel:+4733378901" className="phone">
-            123 456 7890
+            +91 961 181 6233
           </a>
         </>
       ),
@@ -32,7 +32,7 @@ const Address = () => {
       text: (
         <>
           {" "}
-          <a href="#">contact.london@example.com</a>
+          <a href="#">info@aradhyaaromas.com</a>
         </>
       ),
     },

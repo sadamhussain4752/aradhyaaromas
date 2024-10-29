@@ -26,9 +26,9 @@ const index = ({ footerStyle = "" }) => {
                   <a href="tel:9611816233">+91 9611816233</a>
                 </p>
                 <p className="address">
-                  329 Queensberry Street, North Melbourne VIC
-                  <br /> 3051, Bangalore. <br />
-                  <a href="mailto:support@superio.com" className="email">
+                Laggere, Bangalore - 560058
+                <br/>
+                  <a href="mailto:info@aradhyaaromas.com" className="email">
                   info@aradhyaaromas.com
                   </a>
                 </p>

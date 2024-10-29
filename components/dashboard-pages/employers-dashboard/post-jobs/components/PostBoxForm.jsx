@@ -341,7 +341,7 @@ const PostBoxForm = () => {
           <input
             type="text"
             name="completeAddress"
-            placeholder="329 Queensberry Street, North Melbourne VIC 3051, Australia."
+            placeholder="Laggere, Bangalore - 560058"
             value={formData.completeAddress}
             onChange={handleInputChange}
           />
@@ -352,7 +352,7 @@ const PostBoxForm = () => {
           <input
             type="text"
             name="findOnMap"
-            placeholder="329 Queensberry Street, North Melbourne VIC 3051, Australia."
+            placeholder="Laggere, Bangalore - 560058"
             value={formData.findOnMap}
             onChange={handleInputChange}
           />

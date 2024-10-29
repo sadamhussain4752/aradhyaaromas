@@ -20,11 +20,10 @@ const SidebarFooter = () => {
             <a href="tel:9611816233">+91 9611816233</a>
           </span>
           <span className="address">
-            329 Queensberry Street, North Melbourne VIC <br />
-            3051, Australia.
+          Laggere, Bangalore - 560058 <br/>
           </span>
-          <a href="mailto:support@superio.com" className="email">
-            support@superio.com
+          <a href="mailto:info@aradhyaaromas.com" className="email">
+            info@aradhyaaromas.com
           </a>
         </div>
         {/* End .contact-info */}
